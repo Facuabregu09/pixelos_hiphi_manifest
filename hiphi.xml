@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="gh" fetch="https://github.com" />
+
+  <!-- device trees (TheMard) -->
+  <project name="motorola-sm8450-devs/android_device_motorola_sm8475-common" path="device/motorola/sm8475-common" remote="gh" revision="lineage-23.2"/>
+  <project name="motorola-sm8450-devs/android_device_motorola_hiphi" path="device/motorola/hiphi" remote="gh" revision="lineage-23.2"/>
+
+  <!-- kernel prebuilt con mi fix de recovery -->
+  <project name="Facuabregu09/android_device_motorola_hiphi-kernel" path="device/motorola/hiphi-kernel" remote="gh" revision="lineage-23.2"/>
+
+  <!-- vendor blobs -->
+  <project name="motorola-sm8450-devs/proprietary_vendor_motorola_sm8475-common" path="vendor/motorola/sm8475-common" remote="gh" revision="lineage-23.2"/>
+  <project name="motorola-sm8450-devs/proprietary_vendor_motorola_hiphi" path="vendor/motorola/hiphi" remote="gh" revision="lineage-23.2"/>
+
+  <!-- hardware común motorola -->
+  <project name="LineageOS/android_hardware_motorola" path="hardware/motorola" remote="gh" revision="lineage-23.2"/>
+</manifest>
