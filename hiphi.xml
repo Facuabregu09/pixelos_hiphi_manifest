@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="gh" fetch="https://github.com" />
-
   <!-- ============================================================ -->
-  <!-- PixelOS 16 for Motorola Edge 30 Pro (hiphi)                  -->
-  <!-- Base device trees, kernel and vendor by ThE_MarD            -->
-  <!-- (motorola-sm8450-devs). Forked and adapted by Facuabregu09. -->
-  <!-- Credits to ThE_MarD for the original bring-up.              -->
+  <!-- Infinity X 3.11 for Motorola Edge 30 Pro (hiphi)             -->
+  <!-- Base device trees, kernel and vendor by ThE_MarD             -->
+  <!-- (motorola-sm8450-devs). Forked and adapted by Facuabregu09.  -->
+  <!-- Credits to ThE_MarD for the original bring-up.               -->
+  <!--                                                              -->
+  <!-- NOTE: After repo sync, apply sepolicy patch:                 -->
+  <!-- cd system/sepolicy && git apply ~/sepolicy_hal_attribute_lineage.patch -->
   <!-- ============================================================ -->
 
-  <!-- Device trees (Facuabregu09 - adapted from ThE_MarD) -->
-  <project name="Facuabregu09/android_device_motorola_sm8475-common" path="device/motorola/sm8475-common" remote="gh" revision="lineage-23.2"/>
-  <project name="Facuabregu09/android_device_motorola_hiphi" path="device/motorola/hiphi" remote="gh" revision="lineage-23.2"/>
+  <!-- Device trees (infinity-x-16 branch - adapted for Infinity X) -->
+  <project name="Facuabregu09/android_device_motorola_sm8475-common" path="device/motorola/sm8475-common" remote="gh" revision="infinity-x-16"/>
+  <project name="Facuabregu09/android_device_motorola_hiphi" path="device/motorola/hiphi" remote="gh" revision="infinity-x-16"/>
 
-  <!-- Kernel source (Facuabregu09 forks - fixes hotspot, restores LiveDisplay) -->
+  <!-- Kernel source (unchanged from PixelOS/Axion) -->
   <project name="Facuabregu09/android_kernel_motorola_sm8475" path="kernel/motorola/sm8475" remote="gh" revision="lineage-23.2"/>
   <project name="Facuabregu09/android_kernel_motorola_sm8475-devicetrees" path="kernel/motorola/sm8475-devicetrees" remote="gh" revision="lineage-23.2"/>
   <project name="Facuabregu09/android_kernel_motorola_sm8475-modules" path="kernel/motorola/sm8475-modules" remote="gh" revision="lineage-23.2"/>
 
-  <!-- Vendor blobs sm8475-common (Facuabregu09 - includes taro fluidity tuning) -->
+  <!-- Vendor blobs (unchanged) -->
   <project name="Facuabregu09/proprietary_vendor_motorola_sm8475-common" path="vendor/motorola/sm8475-common" remote="gh" revision="lineage-23.2"/>
-
-  <!-- Vendor blobs hiphi (ThE_MarD - unchanged) -->
   <project name="motorola-sm8450-devs/proprietary_vendor_motorola_hiphi" path="vendor/motorola/hiphi" remote="gh" revision="lineage-23.2"/>
 
   <!-- Common Motorola hardware (LineageOS) -->

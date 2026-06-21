@@ -1,0 +1,18 @@
+diff --git a/public/te_macros b/public/te_macros
+index 849c8fd30..3c761830e 100644
+--- a/public/te_macros
++++ b/public/te_macros
+@@ -1153,3 +1153,13 @@ define(`set_xperm_filter', `
+ ')
+ 
+ divert(0)
++
++# LineageOS compatibility macro
++define(`hal_attribute_lineage', `
++attribute hal_$1;
++expandattribute hal_$1 true;
++attribute hal_$1_client;
++expandattribute hal_$1_client true;
++attribute hal_$1_server;
++expandattribute hal_$1_server true;
++')
